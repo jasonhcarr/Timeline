@@ -1,0 +1,44 @@
+.article-container:hover {
+    background-color: $color-light;
+}
+
+.article-container:hover .triangle {
+    border-color: transparent $color-light transparent transparent;
+}
+
+.article-container {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 93%;
+    margin: 5px 0 5px 7%;
+    @include tablet {
+        width: 95%;
+        margin: 5px 0 5px 3%;
+    };
+    @include phone {
+        width: 98%;
+        margin: 5px 1%;
+    };
+    align-items: center;
+    background-color: $color-dark;
+    color: white;
+    padding: 20px;
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9px 10px 9px 0;
+        border-color: transparent $color-dark transparent transparent;
+        left: 7%;
+        top: 10px;
+        margin-left: -5px;
+        position: absolute;
+    }
+
+    .entry-headings {
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid white;
+    }
+}

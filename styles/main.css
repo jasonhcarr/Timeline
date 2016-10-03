@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-direction: column;
+  vertical-align: center;
+  padding-top: 60px; }
+
+.container-main {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #6cbfee;
+  width: 75%;
+  height: auto;
+  display: flex;
+  margin: 0 10% 0 15%;
+  flex-direction: column;
+  position: relative; }
+  @media (min-width: 501px) and (max-width: 900px) {
+    .container-main {
+      width: 80%; } }
+  @media (max-width: 500px) {
+    .container-main {
+      width: 95%; } }
+  @media (min-width: 501px) and (max-width: 900px) {
+    .container-main {
+      margin: 0 2% 0 18%; } }
+  @media (max-width: 500px) {
+    .container-main {
+      margin: 0; } }
+  .container-main .time-date-container {
+    float: left;
+    position: absolute;
+    left: -120px;
+    top: 0; }
+    @media (max-width: 500px) {
+      .container-main .time-date-container {
+        left: 42%;
+        top: -14px; } }
+    .container-main .time-date-container .date {
+      font-size: 0.75em;
+      color: #bcd1e1;
+      text-align: right; }
+      @media (max-width: 500px) {
+        .container-main .time-date-container .date {
+          text-align: center; } }
+    .container-main .time-date-container .time {
+      font-size: 2.5em; }
+      @media (max-width: 500px) {
+        .container-main .time-date-container .time {
+          color: white; } }
+
+.entry-container {
+  width: 100%;
+  border-left: 5px solid #afdcfB; }
+  @media (max-width: 500px) {
+    .entry-container {
+      padding-bottom: 25px; } }
+  .entry-container .item-container {
+    border: solid 5px #afdcfB;
+    background-color: #6cbfee;
+    width: 30px;
+    height: 30px;
+    left: -22px;
+    position: relative;
+    float: left;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    text-align: center; }
+    .entry-container .item-container .icon {
+      color: white;
+      line-height: 30px; }
+
+.article-container:hover {
+  background-color: #afdcfB; }
+
+.article-container:hover .triangle {
+  border-color: transparent #afdcfB transparent transparent; }
+
+.article-container {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 93%;
+  margin: 5px 0 5px 7%;
+  align-items: center;
+  background-color: #6cbfee;
+  color: white;
+  padding: 20px; }
+  @media (min-width: 501px) and (max-width: 900px) {
+    .article-container {
+      width: 95%;
+      margin: 5px 0 5px 3%; } }
+  @media (max-width: 500px) {
+    .article-container {
+      width: 98%;
+      margin: 5px 1%; } }
+  .article-container .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 10px 9px 0;
+    border-color: transparent #6cbfee transparent transparent;
+    left: 7%;
+    top: 10px;
+    margin-left: -5px;
+    position: absolute; }
+  .article-container .entry-headings {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid white; }
+
+/*# sourceMappingURL=main.css.map */

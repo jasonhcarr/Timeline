@@ -1,0 +1,55 @@
+.container-main {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: $color-dark;
+    width: 75%;
+    @include tablet {
+        width: 80%;
+    };
+    @include phone {
+        width: 95%;
+    };
+    height: auto;
+    display: flex;
+    margin: 0 10% 0 15%;
+    @include tablet {
+        margin: 0 2% 0 18%;
+    };
+    @include phone {
+        margin: 0;
+    };
+    flex-direction: column;
+    position: relative;
+
+    .time-date-container {
+        float: left;
+        position: absolute;
+        left: -120px;
+        top: 0;
+        @include phone {
+            left: 42%;
+            top: -14px;
+        };
+
+        .date {
+            font-size: 0.75em;
+            color: #bcd1e1;
+            text-align: right;
+            @include phone {
+                text-align: center;
+            };
+        }
+
+        .time {
+            font-size: 2.5em;
+            @include phone {
+                color: white;
+            };
+        }
+
+// I believe this isn't working because .article-container and .time are in different partials.
+//         .article-container:hover .time {
+//             color: $color-light;
+//         }
+    }
+}
